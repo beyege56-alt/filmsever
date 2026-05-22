@@ -36,7 +36,7 @@ class Hanime : MainAPI() {
             HomePageResponse? {
         var list = mutableListOf<AnimeSearchResponse>()
         val res = app.get("$mainUrl/${request.data}/page/$page").document
-        res.select("article.anime.poster.por").mapNotNull { article ->
+        res.select("a[href*=videos]").mapNotNull { article ->
             val name = article.selectFirst("header > div.ttl")?.text() ?: ""
             val poster = article.selectFirst("img.hvc__media__cover__image")?.attr("src")
             val url = article.selectFirst("a.lnk-blk")?.attr("href") ?: ""
@@ -60,7 +60,7 @@ class Hanime : MainAPI() {
             "$mainUrl/?s=${query}"
         return app.get(
             url,
-        ).document.select("article.anime.poster.por").mapNotNull { article ->
+        ).document.select("a[href*=videos]").mapNotNull { article ->
             val name = article.selectFirst("header > div.ttl")?.text() ?: ""
             val poster = article.selectFirst("img.hvc__media__cover__image")?.attr("src")
             val url = article.selectFirst("a.lnk-blk")?.attr("href") ?: ""
