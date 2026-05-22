@@ -1,8 +1,0 @@
-{
-    "name": "Filmsever +18 Repo",
-    "description": "HentaiHaven, Hanime, HentaiCity, PimpBunny",
-    "manifestVersion": 1,
-    "pluginLists": [
-      "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/plugins.json"
-    ]
-}
