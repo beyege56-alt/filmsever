@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <manifest />
+=======
+<manifest package="com.lagradost"/>
+>>>>>>> ffe409a (4 site eklendi: HentaiHaven, Hanime, HentaiCity, PimpBunny)
