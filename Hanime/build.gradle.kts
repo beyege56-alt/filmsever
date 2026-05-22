@@ -21,5 +21,5 @@ cloudstream {
         "NSFW",
     )
 
-    iconUrl = "https://www.google.com/s2/favicons?domain=animeidhentai.com&sz=%size%"
+    iconUrl = "https://www.google.com/s2/favicons?domain=hanime.tv&sz=%size%"
 }
