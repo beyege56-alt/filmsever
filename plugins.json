@@ -1,8 +1,6 @@
-{
-  "extensions": [
-    {"name": "HentaiHaven", "packageName": "com.jacekun.HentaiHavenPlugin", "version": 7, "url": "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/HentaiHaven.cs3"},
-    {"name": "Hanime", "packageName": "com.Rowdycado.HanimePlugin", "version": 7, "url": "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/Hanime.cs3"},
-    {"name": "HentaiCity", "packageName": "com.Rowdycado.HentaiCityPlugin", "version": 7, "url": "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/HentaiCity.cs3"},
-    {"name": "PimpBunny", "packageName": "com.CXXX.PimpBunnyProvider", "version": 7, "url": "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/PimpBunny.cs3"}
-  ]
-}
+[
+  {"name": "HentaiHaven", "packageName": "com.jacekun.HentaiHavenPlugin", "version": 7, "url": "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/HentaiHaven.cs3"},
+  {"name": "Hanime", "packageName": "com.Rowdycado.HanimePlugin", "version": 7, "url": "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/Hanime.cs3"},
+  {"name": "HentaiCity", "packageName": "com.Rowdycado.HentaiCityPlugin", "version": 7, "url": "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/HentaiCity.cs3"},
+  {"name": "PimpBunny", "packageName": "com.CXXX.PimpBunnyProvider", "version": 7, "url": "https://raw.githubusercontent.com/beyege56-alt/filmsever/master/PimpBunny.cs3"}
+]
