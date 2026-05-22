@@ -7,9 +7,9 @@ import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.newExtractorLink
 
 
-class Hanime : MainAPI() {
-    override var mainUrl = "https://hanime.tv"
-    override var name = "Hanime"
+class HentaiCity : MainAPI() {
+    override var mainUrl = "https://hentaicity.com"
+    override var name = "HentaiCity"
     override val hasQuickSearch = false
     override val hasMainPage = true
     override val supportedTypes = setOf(
@@ -38,7 +38,7 @@ class Hanime : MainAPI() {
         val res = app.get("$mainUrl/${request.data}/page/$page").document
         res.select("article.anime.poster.por").mapNotNull { article ->
             val name = article.selectFirst("header > div.ttl")?.text() ?: ""
-            val poster = article.selectFirst("img.hvc__media__cover__image")?.attr("src")
+            val poster = article.selectFirst("img")?.attr("src")
             val url = article.selectFirst("a.lnk-blk")?.attr("href") ?: ""
             list.add(newAnimeSearchResponse(name, url)
             {
@@ -62,7 +62,7 @@ class Hanime : MainAPI() {
             url,
         ).document.select("article.anime.poster.por").mapNotNull { article ->
             val name = article.selectFirst("header > div.ttl")?.text() ?: ""
-            val poster = article.selectFirst("img.hvc__media__cover__image")?.attr("src")
+            val poster = article.selectFirst("img")?.attr("src")
             val url = article.selectFirst("a.lnk-blk")?.attr("href") ?: ""
             newAnimeSearchResponse(name, url) {
                 posterUrl = poster

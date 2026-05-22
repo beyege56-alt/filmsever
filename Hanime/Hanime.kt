@@ -38,7 +38,7 @@ class Hanime : MainAPI() {
         val res = app.get("$mainUrl/${request.data}/page/$page").document
         res.select("article.anime.poster.por").mapNotNull { article ->
             val name = article.selectFirst("header > div.ttl")?.text() ?: ""
-            val poster = article.selectFirst("img.hvc__media__cover__image")?.attr("src")
+            val poster = article.selectFirst("img")?.attr("src")
             val url = article.selectFirst("a.lnk-blk")?.attr("href") ?: ""
             list.add(newAnimeSearchResponse(name, url)
             {
@@ -62,7 +62,7 @@ class Hanime : MainAPI() {
             url,
         ).document.select("article.anime.poster.por").mapNotNull { article ->
             val name = article.selectFirst("header > div.ttl")?.text() ?: ""
-            val poster = article.selectFirst("img.hvc__media__cover__image")?.attr("src")
+            val poster = article.selectFirst("img")?.attr("src")
             val url = article.selectFirst("a.lnk-blk")?.attr("href") ?: ""
             newAnimeSearchResponse(name, url) {
                 posterUrl = poster
